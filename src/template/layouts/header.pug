@@ -1,0 +1,95 @@
+header
+  nav.navbar.navbar-expand-lg.bg-light
+    .container
+      a.navbar-brand(href='#')
+        img(src="./images/logo.png" width="150")
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.m-auto.mb-2.mb-lg-0
+          li.nav-item
+            a.nav-link.active(aria-current='page' href='#')
+              i.fal.fa-shopping-cart
+              span Auctions
+          li.nav-item
+            a.nav-link(href='#')
+              i.fal.fa-trophy
+              span Contests
+          li.nav-item
+            a.nav-link(href='#')
+              i.fal.fa-briefcase
+              span Project
+          li.nav-item
+            a.nav-link(href='#')
+              i.fal.fa-image
+              span Portfolios
+          li.nav-item
+            a.nav-link(href='#')
+              i.fal.fa-users
+              span Freelancers
+          li.nav-item
+            a.nav-link(href='#')
+              i.fal.fa-messages
+              span Forum
+
+        .account-container
+          .dropdown
+            button.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+              i.fal.fa-comment-dots
+              span.count 10
+            ul.dropdown-menu
+              li
+                a.dropdown-item(href='#') Action
+              li
+                a.dropdown-item(href='#') Another action
+              li
+                a.dropdown-item(href='#') Something else here
+
+          .dropdown
+            button.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+              i.fal.fa-bell
+              span.count 10
+
+            ul.dropdown-menu
+              li
+                a.dropdown-item(href='#') Action
+              li
+                a.dropdown-item(href='#') Another action
+              li
+                a.dropdown-item(href='#') Something else here
+
+          .dropdown
+            button.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+              img(src="./images/user-img.jfif")
+            .dropdown-menu.account
+              .account-info
+                img(src="./images/user-img.jfif")
+                div
+                  h3 Ahmed Ali
+                  span Student
+              a.d-flex(href='#')
+                i.fal.fa-circle-user
+                span My Profile
+              div.d-flex
+                .content
+                  i.fal.fa-moon
+                  span Dark Mode
+                .button
+                  .form-check.form-switch
+                    input#flexSwitchCheckChecked.form-check-input(type='checkbox' role='switch' checked='')
+
+              div.d-flex
+                .content
+                  i.fal.fa-language
+                  span Language
+                button.button
+                  span.ar العربية
+                  img(src="./images/ar.png")
+              a.d-flex(href='#')
+                i.fal.fa-cog
+                span Account Settings
+
+              div.d-flex.logout
+                button
+                  i.fal.fa-arrow-right-from-bracket
+                  span Logout

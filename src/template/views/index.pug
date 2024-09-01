@@ -1,0 +1,414 @@
+doctype html
+html(lang="en")
+  head
+    -var pageName = "Home";
+    include ../base/head
+  body
+    // ========== HEADING ==========
+    include ../layouts/header
+    
+    main
+      section
+        .container
+          .row
+            .col-lg-9.main-content
+              .service
+                .service__info
+                  nav(aria-label='breadcrumb')
+                    ol.breadcrumb
+                      li.breadcrumb-item
+                        a(href='#') Design
+                      li.breadcrumb-item.active(aria-current='page') Logo Design
+
+                  h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet, 
+
+                  .service__rate
+                    .rating
+                      .rate
+                        i.fa.fa-star.active
+                        i.fa.fa-star.active
+                        i.fa.fa-star.active
+                        i.fa.fa-star.active
+                        i.fa.fa-star
+                      span 4.1 (500)
+                    .sharing
+                      button(type="button")
+                        i.far.fa-share-nodes
+                      button(type="button")
+                        i.far.fa-heart
+                .service__carousel
+                  #carouselExampleControls.carousel.slide(data-bs-ride='carousel')
+                    .carousel-inner
+                      .carousel-item.active
+                        img.d-block.w-100(src='https://s3-alpha-sig.figma.com/img/9339/17a9/88163f9e30a528d7d670a997013cc583?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=h7zjUilPvrT99VWYVvMUo~DD9ORyM6vOK0AXCVKS6tBelt0A0hI355pkp7zBw0h9xnJW1zNjI-6m7qiYowsLBlxDplGlEuF2PRjyMeSbNs5hIMQKh7QLZqnzOQZEdqipBhxEMZLCRghrXSJ5bXkMggqwBKB2Zv0XTfp31z5MKXlxCO0D3-QT49pDU76MrcxCUJgIJGUxHdN-TrWAIWTf8K8JfyqyihjSp8WWe9h5F0a966OcbByskMMvGetudm1umlpDTBhqyLR5D3D4GfCiaEsH-v8Q5zGrp5TZb3id8npuSqB1chUslRRbCHdnEZRvaBpuMuUFi-6M93qo9YKhOg__' alt='banner 1')
+                      .carousel-item
+                        img.d-block.w-100(src='https://s3-alpha-sig.figma.com/img/9339/17a9/88163f9e30a528d7d670a997013cc583?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=h7zjUilPvrT99VWYVvMUo~DD9ORyM6vOK0AXCVKS6tBelt0A0hI355pkp7zBw0h9xnJW1zNjI-6m7qiYowsLBlxDplGlEuF2PRjyMeSbNs5hIMQKh7QLZqnzOQZEdqipBhxEMZLCRghrXSJ5bXkMggqwBKB2Zv0XTfp31z5MKXlxCO0D3-QT49pDU76MrcxCUJgIJGUxHdN-TrWAIWTf8K8JfyqyihjSp8WWe9h5F0a966OcbByskMMvGetudm1umlpDTBhqyLR5D3D4GfCiaEsH-v8Q5zGrp5TZb3id8npuSqB1chUslRRbCHdnEZRvaBpuMuUFi-6M93qo9YKhOg__' alt='banner 1')
+                      .carousel-item
+                        img.d-block.w-100(src='https://s3-alpha-sig.figma.com/img/9339/17a9/88163f9e30a528d7d670a997013cc583?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=h7zjUilPvrT99VWYVvMUo~DD9ORyM6vOK0AXCVKS6tBelt0A0hI355pkp7zBw0h9xnJW1zNjI-6m7qiYowsLBlxDplGlEuF2PRjyMeSbNs5hIMQKh7QLZqnzOQZEdqipBhxEMZLCRghrXSJ5bXkMggqwBKB2Zv0XTfp31z5MKXlxCO0D3-QT49pDU76MrcxCUJgIJGUxHdN-TrWAIWTf8K8JfyqyihjSp8WWe9h5F0a966OcbByskMMvGetudm1umlpDTBhqyLR5D3D4GfCiaEsH-v8Q5zGrp5TZb3id8npuSqB1chUslRRbCHdnEZRvaBpuMuUFi-6M93qo9YKhOg__' alt='banner 1')
+                    button.carousel-control-prev(type='button' data-bs-target='#carouselExampleControls' data-bs-slide='prev')
+                      i.fal.fa-chevron-left
+                    button.carousel-control-next(type='button' data-bs-target='#carouselExampleControls' data-bs-slide='next')
+                      i.fal.fa-chevron-right
+
+
+              .custome-card
+                .head
+                  h3.lg Description
+                .card.body
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet.
+            
+              .custome-card
+                .head
+                  h3.lg Service Add-Ons
+                  button
+                    i.far.fa-check-circle
+                    span Select All
+                div
+                  ul.addons
+                    li.addon.card
+                      .form-check
+                        input#addon1.form-check-input(type='checkbox' value='')
+                        label.form-check-label(for='addon1') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.
+                      ul
+                        li $100
+                        li 2 days
+                    li.addon.card
+                      .form-check
+                        input#addon2.form-check-input(type='checkbox' value='')
+                        label.form-check-label(for='addon2') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.
+                      ul
+                        li $100
+                        li 2 days
+                    li.addon.card
+                      .form-check
+                        input#addon3.form-check-input(type='checkbox' value='')
+                        label.form-check-label(for='addon3') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet.
+                      ul
+                        li $100
+                        li 2 days
+
+              .custome-card
+                .head
+                  h3.lg Purchase Service
+                .body.card
+                  form
+                    .content
+                      .count
+                        button.decrease(type="button")
+                          i.fa.fa-minus
+                        input(type="number" disabled value="3")
+                        button.increase(type="button")
+                          i.fa.fa-plus
+
+                      .price 
+                        span $
+                        span.money 300
+
+                    button(type="submit").btn.btn-primary Purchase
+            
+              .custome-card
+                .head
+                  h3.lg 
+                    i.fas.fa-star
+                    span 4.6 Service Rating . 
+                    span 46 Ratings
+                ul.services
+                  li.row.g-4.rate-service
+                    .col-lg-5.service-info
+                      h3 Work Quality
+                      .short-rate
+                        i.fa.fa-star
+                        span 5.0
+
+
+                    .col-lg-2
+                      .rate
+                        i.fa.fa-star.active
+                        i.fa.fa-star.active
+                        i.fa.fa-star.active
+                        i.fa.fa-star.active
+                        i.fa.fa-star
+                    .col-lg-5.service-progress
+                      .progress
+                        .progress-bar(role='progressbar' aria-label='Basic example' style='width: 80%' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100')
+                      span 4
+                  li.row.g-4.rate-service
+                    .col-lg-5.service-info
+                      h3 Communication & Collaboration
+                      .short-rate
+                        i.fa.fa-star
+                        span 5.0
+
+
+                    .col-lg-2
+                      .rate
+                        i.fa.fa-star.active
+                        i.fa.fa-star.active
+                        i.fa.fa-star.active
+                        i.fa.fa-star.active
+                        i.fa.fa-star
+                    .col-lg-5.service-progress
+                      .progress
+                        .progress-bar(role='progressbar' aria-label='Basic example' style='width: 80%' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100')
+                      span 4
+                  li.row.g-4.rate-service
+                    .col-lg-5.service-info
+                      h3 Adherence to Schedule
+                      .short-rate
+                        i.fa.fa-star
+                        span 5.0
+
+
+                    .col-lg-2
+                      .rate
+                        i.fa.fa-star.active
+                        i.fa.fa-star.active
+                        i.fa.fa-star.active
+                        i.fa.fa-star.active
+                        i.fa.fa-star
+                    .col-lg-5.service-progress
+                      .progress
+                        .progress-bar(role='progressbar' aria-label='Basic example' style='width: 80%' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100')
+                      span 4
+
+                .body.card
+                  .comments
+                    .comment
+                      .comment__author
+                        .author__image
+                          img.w-100(src="https://s3-alpha-sig.figma.com/img/ce45/a896/d958cf406bb83c3c0a93e2f03fcb0bef?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=F6Kt0cpN6GEhDP5lXOpl6lz1~4BblFX~jMQp0vavFqG1pHxUCBWq~AgoXnzeXk1Q-KqYhpdx-~lU~HaNN0~ZtXHTUNzgkA4RFdiPAyiHUfiqzUnsFWaTidLpnwmTIGbEa2xR04XjhQeybBoZR9p9Bm6EGNG0PXTM4B7ydcWwQCyygrl7sNOCm1Z3qu2w3FdwbuUZU99wNSUnRD3skZNp2mf8Ai4Yt-0XrwhtYeu~yf17US298uz7BtKrr1wbZHYGBbwDmfAfEUj7uxNnfYbdqKmJXk6i6sGug2xNaxHi15XBjU2DSZN6JAjq9pq4UmAaP3DdaqAYlwOFAQDTd-4cxA__")
+                        .author__info
+                          h3 Jane Smith
+                          .info
+                            .rate
+                              i.fa.fa-star.active
+                              i.fa.fa-star.active
+                              i.fa.fa-star.active
+                              i.fa.fa-star.active
+                              i.fa.fa-star
+                            span .
+                            span 30m 
+                      .comment__content
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit.... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+
+                    .comment
+                      .comment__author
+                        .author__image
+                          img.w-100(src="https://s3-alpha-sig.figma.com/img/ce45/a896/d958cf406bb83c3c0a93e2f03fcb0bef?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=F6Kt0cpN6GEhDP5lXOpl6lz1~4BblFX~jMQp0vavFqG1pHxUCBWq~AgoXnzeXk1Q-KqYhpdx-~lU~HaNN0~ZtXHTUNzgkA4RFdiPAyiHUfiqzUnsFWaTidLpnwmTIGbEa2xR04XjhQeybBoZR9p9Bm6EGNG0PXTM4B7ydcWwQCyygrl7sNOCm1Z3qu2w3FdwbuUZU99wNSUnRD3skZNp2mf8Ai4Yt-0XrwhtYeu~yf17US298uz7BtKrr1wbZHYGBbwDmfAfEUj7uxNnfYbdqKmJXk6i6sGug2xNaxHi15XBjU2DSZN6JAjq9pq4UmAaP3DdaqAYlwOFAQDTd-4cxA__")
+                        .author__info
+                          h3 Jane Smith
+                          .info
+                            .rate
+                              i.fa.fa-star.active
+                              i.fa.fa-star.active
+                              i.fa.fa-star.active
+                              i.fa.fa-star.active
+                              i.fa.fa-star
+                            span .
+                            span 30m 
+                      .comment__content
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit.... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+
+                    .comment
+                      .comment__author
+                        .author__image
+                          img.w-100(src="https://s3-alpha-sig.figma.com/img/ce45/a896/d958cf406bb83c3c0a93e2f03fcb0bef?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=F6Kt0cpN6GEhDP5lXOpl6lz1~4BblFX~jMQp0vavFqG1pHxUCBWq~AgoXnzeXk1Q-KqYhpdx-~lU~HaNN0~ZtXHTUNzgkA4RFdiPAyiHUfiqzUnsFWaTidLpnwmTIGbEa2xR04XjhQeybBoZR9p9Bm6EGNG0PXTM4B7ydcWwQCyygrl7sNOCm1Z3qu2w3FdwbuUZU99wNSUnRD3skZNp2mf8Ai4Yt-0XrwhtYeu~yf17US298uz7BtKrr1wbZHYGBbwDmfAfEUj7uxNnfYbdqKmJXk6i6sGug2xNaxHi15XBjU2DSZN6JAjq9pq4UmAaP3DdaqAYlwOFAQDTd-4cxA__")
+                        .author__info
+                          h3 Jane Smith
+                          .info
+                            .rate
+                              i.fa.fa-star.active
+                              i.fa.fa-star.active
+                              i.fa.fa-star.active
+                              i.fa.fa-star.active
+                              i.fa.fa-star
+                            span .
+                            span 30m 
+                      .comment__content
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit.... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit....
+
+                    .comment.inster
+                      .comment__author
+                        .author__image
+                          img.w-100(src="https://s3-alpha-sig.figma.com/img/ce45/a896/d958cf406bb83c3c0a93e2f03fcb0bef?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=F6Kt0cpN6GEhDP5lXOpl6lz1~4BblFX~jMQp0vavFqG1pHxUCBWq~AgoXnzeXk1Q-KqYhpdx-~lU~HaNN0~ZtXHTUNzgkA4RFdiPAyiHUfiqzUnsFWaTidLpnwmTIGbEa2xR04XjhQeybBoZR9p9Bm6EGNG0PXTM4B7ydcWwQCyygrl7sNOCm1Z3qu2w3FdwbuUZU99wNSUnRD3skZNp2mf8Ai4Yt-0XrwhtYeu~yf17US298uz7BtKrr1wbZHYGBbwDmfAfEUj7uxNnfYbdqKmJXk6i6sGug2xNaxHi15XBjU2DSZN6JAjq9pq4UmAaP3DdaqAYlwOFAQDTd-4cxA__")
+                        form.author__text
+                          textarea(name='message' placeholder="Write your review in here")
+                          button.btn.btn-primary(type='submit') Post Review
+
+
+
+
+
+
+
+            .col-lg-3.side
+              .card
+                h3 Seller
+                .card-details
+                  .user-info
+                    .image-container
+                      img(src="./images/user-img.jfif")
+                      span.is-active
+                    .user
+                      h3 Jane Smith
+                      i.fas.fa-badge-check
+                    .location
+                      i.fas.fa-location-dot
+                      span Cairo, Egypt
+                    .rating
+                      .rating-stars
+                        i.fas.fa-star.active
+                        i.fas.fa-star.active
+                        i.fas.fa-star.active
+                        i.fas.fa-star.active
+                        i.fas.fa-star
+                      span 4.1 (500)
+
+                  .badge-container
+                    .badge
+                      i.fas.fa-certificate
+                    .badge
+                      i.fas.fa-arrow-right-to-bracket
+                    .badge
+                      i.fas.fa-address-card
+
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
+                  button.btn.btn-primary Contact Me
+
+              .card
+                h3 Info
+                .card__body 
+                  ul.columns
+                    li
+                      span
+                        i.fas.fa-dollar-circle
+                        span Price
+                      span $10
+                    li
+                      span
+                        i.fas.fa-clock-three
+                        span Delivery Duration
+                      span 1 day
+                    li
+                      span
+                        i.fas.fa-basket-shopping
+                        span In Progress Orders
+                      span 2
+                    li
+                      span
+                        i.fas.fa-users
+                        span Customers
+                      span 2
+                    li
+                      span
+                        i.fas.fa-badge-percent
+                        span Sales
+                      span 2
+                    li
+                      span
+                        i.fas.fa-list-ul
+                        span Category
+                      span 2
+                    li
+                      span
+                        i.fas.fa-list-ul
+                        span Subcategory
+                      span 2
+
+              .card
+                h3 Share & Earn
+                .card__body
+                  ul.rows.social-media
+                    li
+                      a.linkedin(href="#")
+                        i.fab.fa-linkedin-in
+                    li
+                      a.facebook(href="#")
+                        i.fab.fa-facebook-f
+                    li
+                      a.whatsapp(href="#")
+                        i.fab.fa-whatsapp
+                    li
+                      a.twitter(href="#")
+                        i.fab.fa-twitter
+                    li
+                      a.copy(href="#")
+                        i.far.fa-clone
+
+
+              .custome-card
+                .head
+                  h3 Seller Other Services
+                  a(href="#") see more
+                .products
+                  .card.product.rows
+                    .product__image
+                      img.w-100(src="https://s3-alpha-sig.figma.com/img/9339/17a9/88163f9e30a528d7d670a997013cc583?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=h7zjUilPvrT99VWYVvMUo~DD9ORyM6vOK0AXCVKS6tBelt0A0hI355pkp7zBw0h9xnJW1zNjI-6m7qiYowsLBlxDplGlEuF2PRjyMeSbNs5hIMQKh7QLZqnzOQZEdqipBhxEMZLCRghrXSJ5bXkMggqwBKB2Zv0XTfp31z5MKXlxCO0D3-QT49pDU76MrcxCUJgIJGUxHdN-TrWAIWTf8K8JfyqyihjSp8WWe9h5F0a966OcbByskMMvGetudm1umlpDTBhqyLR5D3D4GfCiaEsH-v8Q5zGrp5TZb3id8npuSqB1chUslRRbCHdnEZRvaBpuMuUFi-6M93qo9YKhOg__")
+                    .product__info
+                      .product__title
+                        h3
+                          a(href="#") Lorem ipsum dolor sit ame, consectetur Lorem ipsum dolor Lorem ipsum dolor sit ame, consectetur Lorem ipsum dolor
+                      .product__details
+                        .details
+                          .rate
+                            i.fa.fa-star
+                            span 4.9 (50) 
+                          .price 
+                            i.fa.fa-tag
+                            span $10
+                        .react
+                          i.far.fa-heart
+                  .card.product.rows
+                    .product__image
+                      img.w-100(src="https://s3-alpha-sig.figma.com/img/9339/17a9/88163f9e30a528d7d670a997013cc583?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=h7zjUilPvrT99VWYVvMUo~DD9ORyM6vOK0AXCVKS6tBelt0A0hI355pkp7zBw0h9xnJW1zNjI-6m7qiYowsLBlxDplGlEuF2PRjyMeSbNs5hIMQKh7QLZqnzOQZEdqipBhxEMZLCRghrXSJ5bXkMggqwBKB2Zv0XTfp31z5MKXlxCO0D3-QT49pDU76MrcxCUJgIJGUxHdN-TrWAIWTf8K8JfyqyihjSp8WWe9h5F0a966OcbByskMMvGetudm1umlpDTBhqyLR5D3D4GfCiaEsH-v8Q5zGrp5TZb3id8npuSqB1chUslRRbCHdnEZRvaBpuMuUFi-6M93qo9YKhOg__")
+                    .product__info
+                      .product__title
+                        h3
+                          a(href="#") Lorem ipsum dolor sit ame, consectetur Lorem ipsum dolor Lorem ipsum dolor sit ame, consectetur Lorem ipsum dolor
+                      
+                      .product__details
+                        .details
+                          .rate
+                            i.fa.fa-star
+                            span 4.9 (50) 
+                          .price 
+                            i.fa.fa-tag
+                            span $10
+                        .react
+                          i.fa.fa-heart
+                  .card.product.rows
+                    .product__image
+                      img.w-100(src="https://s3-alpha-sig.figma.com/img/9339/17a9/88163f9e30a528d7d670a997013cc583?Expires=1710720000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=h7zjUilPvrT99VWYVvMUo~DD9ORyM6vOK0AXCVKS6tBelt0A0hI355pkp7zBw0h9xnJW1zNjI-6m7qiYowsLBlxDplGlEuF2PRjyMeSbNs5hIMQKh7QLZqnzOQZEdqipBhxEMZLCRghrXSJ5bXkMggqwBKB2Zv0XTfp31z5MKXlxCO0D3-QT49pDU76MrcxCUJgIJGUxHdN-TrWAIWTf8K8JfyqyihjSp8WWe9h5F0a966OcbByskMMvGetudm1umlpDTBhqyLR5D3D4GfCiaEsH-v8Q5zGrp5TZb3id8npuSqB1chUslRRbCHdnEZRvaBpuMuUFi-6M93qo9YKhOg__")
+                    .product__info
+                      .product__title
+                        h3
+                          a(href="#") Lorem ipsum dolor sit ame, consectetur Lorem ipsum dolor Lorem ipsum dolor sit ame, consectetur Lorem ipsum dolor
+                      
+                      .product__details
+                        .details
+                          .rate
+                            i.fa.fa-star
+                            span 4.9 (50) 
+                          .price 
+                            i.fa.fa-tag
+                            span $10
+                        .react
+                          i.far.fa-heart
+          .suggest.custome-card
+            .head
+              h3.lg Suggested Services
+              a.lg(href="#") see more
+            .row.products_list.g-4
+              .col-lg-3
+                include ../components/productCard
+              .col-lg-3
+                include ../components/productCard
+              .col-lg-3
+                include ../components/productCard
+              .col-lg-3
+                include ../components/productCard
+
+
+    include ../layouts/footer
+
+    include ../base/scripts

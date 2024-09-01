@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  transition: all 0.4s;
+  font-family: "Montserrat", sans-serif;
+}
+
+.ar {
+  font-family: "Cairo", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+a {
+  transition: 0.3s;
+  text-decoration: none;
+}
+main {
+  min-height: 48.2vh;
+}
+
+@include break-point(desktop) {
+  .mobile {
+    display: none !important;
+  }
+  .desktop {
+    display: block !important;
+  }
+}
+
+@include break-point(desktopAndBelow) {
+  .mobile {
+    display: block !important;
+  }
+  .desktop {
+    display: none !important;
+  }
+}
+
+.form-check-input:checked {
+  background-color: var(--primary-900);
+  border-color: var(--primary-900);
+}

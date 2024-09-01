@@ -1,0 +1,25 @@
+.progress {
+  --bs-progress-bar-bg: var(--warning-300);
+  --bs-progress-bgg: var(--grey-200);
+}
+.breadcrumb {
+  margin-bottom: 0;
+}
+
+.form-check {
+  display: flex;
+  padding-left: 30px;
+  align-items: flex-start;
+
+  gap: 16px;
+  .form-check-input {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% !important;
+    flex: none;
+  }
+  label {
+    @extend .text-lg;
+    font-size: 16px;
+  }
+}

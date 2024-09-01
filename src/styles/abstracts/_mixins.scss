@@ -1,0 +1,87 @@
+@mixin flex($dir: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin nowarp {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin fontawesome($icon) {
+  content: $icon;
+  display: inline-block;
+  font-family: "Font Awesome 5 Pro";
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin break-point($point) {
+  @if $point == screenHD {
+    @media (min-width: 1500.99px) {
+      @content;
+    }
+  } @else if $point == desktop {
+    @media (min-width: 1200.99px) {
+      @content;
+    }
+  } @else if $point == desktopAndBelow {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  } @else if $point == laptop {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  } @else if $point == maxTablet {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media only screen and (max-width: 991.98px) {
+      @content;
+    }
+  } @else if $point == smallTablet {
+    @media (min-width: 575.99px) and (max-width: 767.98px) {
+      @content;
+    }
+  } @else if $point == tabletOnly {
+    @media (max-width: 991.98px) and (min-width: 575.99px) {
+      @content;
+    }
+  } @else if $point == mobile {
+    @media only screen and (max-width: 575.98px) {
+      @content;
+    }
+  }
+}
+
+.text-lg {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0.005em;
+}
+.text-md {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+}
+.text-sm {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: -0.15000000596046448px;
+}
+.text-xs {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0.005em;
+}
