@@ -5,11 +5,7 @@
 }
 body {
   transition: all 0.4s;
-  font-family: "Montserrat", sans-serif;
-}
-
-.ar {
-  font-family: "Cairo", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 ul {
@@ -45,6 +41,6 @@ main {
 }
 
 .form-check-input:checked {
-  background-color: var(--primary-900);
-  border-color: var(--primary-900);
+  background-color: var(--primary);
+  border-color: var(--primary);
 }

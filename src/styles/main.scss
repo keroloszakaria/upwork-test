@@ -1,7 +1,4 @@
 // Theme
-@import "themes/light";
-@import "themes/dark";
-
 // Abstracts
 @import "abstracts/fonts";
 @import "abstracts/variables";
@@ -16,11 +13,11 @@
 // Layout
 
 // Components
-@import "components/navbar";
-@import "components/card";
+@import "components/list";
+@import "components/banner";
 @import "components/button";
 @import "components/product";
-@import "components/comment";
+@import "components/badges";
 
 // Plugin
 @import "plugins/bootstrap";

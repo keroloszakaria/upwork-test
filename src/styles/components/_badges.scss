@@ -1,0 +1,44 @@
+.badges {
+  background-color: #1176ae;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__card {
+    display: flex;
+    gap: 1.5rem;
+    .icon {
+      height: 100%;
+      width: 47px;
+      background-color: #f16126;
+      padding: 11px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+        &.invert {
+          filter: invert(100%);
+        }
+      }
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
+    }
+    h3 {
+      color: #ffffff;
+      font-weight: 400;
+      font-size: 1.4rem;
+      margin-bottom: 0;
+    }
+    p {
+      color: #f3f3f3;
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+  }
+}

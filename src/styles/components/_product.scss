@@ -1,31 +1,11 @@
 .product {
   display: flex;
-  padding: 0;
+  padding: 12px 7px;
   overflow: hidden;
-
-  &.rows {
-    flex-direction: row;
-    height: 108px;
-    gap: 12px;
-    .product__image {
-      width: 108px;
-      flex: none;
-    }
-    .product__info {
-      padding: 14px 11px 14px 0;
-      justify-content: space-between;
-    }
-    .product__title {
-      h3 {
-        a {
-          -webkit-line-clamp: 3;
-        }
-      }
-    }
-    .product__details {
-      justify-content: space-between;
-    }
-  }
+  box-shadow: 0px 0px 5px 0px #00000038;
+  border-radius: 8px;
+  gap: 1rem;
+  border: none;
   &.columns {
     flex-direction: column;
     .product__image {
@@ -34,32 +14,43 @@
       position: relative;
       .react {
         position: absolute;
-        width: 42px;
-        height: 42px;
-        left: 11px;
-        top: 18px;
-        background-color: #fff;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 20px;
+        height: 20px;
+        top: 0;
+        right: 0;
         cursor: pointer;
         i {
           font-size: 24px;
           &.far {
-            color: var(--grey-400);
+            color: #f16126;
           }
         }
       }
     }
+    .product__category {
+      h4 {
+        color: #00000080;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16.59px;
+        letter-spacing: 0.045em;
+        text-align: center;
+      }
+    }
     .product__info {
-      padding: 16px 13px 19px;
-      gap: 16px;
+      padding: 0px 7px;
     }
     .product__title {
       h3 {
         a {
-          -webkit-line-clamp: 2;
+          -webkit-line-clamp: 3;
+          font-family: Rubik;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 16.59px;
+          letter-spacing: 0.045em;
+          text-align: center;
         }
       }
     }
@@ -88,94 +79,47 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
-        margin-bottom: 0;
+        margin-bottom: 4px;
         color: #000;
       }
     }
   }
   .product__details {
     display: flex;
-    gap: 20px;
-    &.columns {
-      flex-direction: column;
-    }
-    .details {
-      display: flex;
-      gap: 10px;
-      > div {
-        display: flex;
-        gap: 4px;
-        align-items: center;
-      }
-    }
-    .rate {
-      i {
-        color: var(--warning-300);
-      }
-      span {
-        color: #86869e;
-        font-size: 12px;
-      }
-    }
+    align-items: center;
+    gap: 15px;
     .price {
-      i {
-        color: var(--primary-900);
+      display: flex;
+      align-items: flex-end;
+      p {
+        margin-bottom: 0;
       }
-      span {
-        font-weight: 600;
-        font-size: 12px;
-        color: #000;
+      .after {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 21.33px;
+        letter-spacing: 0.045em;
+        text-align: left;
+        color: #1176ae;
+        text-wrap: nowrap;
+      }
+      .before {
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 11.85px;
+        letter-spacing: 0.045em;
+        text-align: left;
+        color: #00000080;
+        text-wrap: nowrap;
+        text-decoration: line-through;
       }
     }
     .cart {
-      i {
-        color: var(--grey-400);
-      }
-      span {
-        font-size: 12px;
-        color: var(--grey-400);
-      }
-    }
-    .react {
+      all: unset;
       cursor: pointer;
-      i.far {
-        color: var(--grey-400);
-      }
-      i.fa {
-        color: #ff5353;
-      }
-    }
-  }
-  .product__auther {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    .user {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      .user__image {
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        overflow: hidden;
-      }
-      .name {
-        margin-bottom: 0;
-        @extend .text-sm;
-        font-weight: 600;
-        color: #000;
-      }
-    }
-    .price {
-      display: flex;
-      gap: 6px;
-      align-items: center;
-      span {
-        @extend .text-lg;
-        font-size: 16px;
-        font-weight: 600;
+      i {
+        font-size: 20px;
+        color: #1176ae;
       }
     }
   }

@@ -14,7 +14,7 @@ const destDir = "dist/";
 // Pug (Jade) task to compile Pug files
 function compilePug() {
   return gulp
-    .src(srcDir + "template/views/*.pug")
+    .src(srcDir + "src/views/*.pug")
     .pipe(pug())
     .pipe(gulp.dest(destDir));
 }
@@ -57,10 +57,7 @@ function watch() {
   // Initialize BrowserSync
   browserSyncInit();
 
-  gulp.watch(
-    [srcDir + "template/views/*.pug", srcDir + "template/**/*.pug"],
-    compilePug
-  );
+  gulp.watch([srcDir + "src/views/*.pug", srcDir + "src/**/*.pug"], compilePug);
   gulp.watch(
     [srcDir + "styles/**/*.scss", srcDir + "styles/*.scss"],
     compileSass

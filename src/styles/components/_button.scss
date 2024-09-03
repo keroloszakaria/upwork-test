@@ -1,6 +1,12 @@
 .btn-primary {
-  --bs-btn-bg: var(--primary-900);
-  --bs-btn-border-color: var(--primary-900);
-  --bs-btn-hover-bg: var(--primary-900);
-  --bs-btn-hover-border-color: var(--primary-900);
+  --bs-btn-bg: var(--primary);
+  --bs-btn-border-color: var(--primary);
+  --bs-btn-hover-bg: var(--primary);
+  --bs-btn-hover-border-color: var(--primary);
+  border-radius: 4px;
+
+  &:hover {
+    color: var(--primary);
+    background-color: var(--base-white);
+  }
 }

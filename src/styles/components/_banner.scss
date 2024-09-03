@@ -1,0 +1,32 @@
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 285px;
+  background-color: #fdede7;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/banner-bg.png");
+    z-index: 1;
+  }
+  &__content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  h3 {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56.88px;
+    letter-spacing: 0.045em;
+    text-align: center;
+  }
+}

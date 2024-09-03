@@ -67,6 +67,14 @@
   line-height: 19px;
   letter-spacing: 0.005em;
 }
+
+.heading {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 37.92px;
+  letter-spacing: 0.045em;
+}
+
 .text-md {
   font-size: 14px;
   font-weight: 700;
@@ -84,4 +92,11 @@
   font-weight: 500;
   line-height: 12px;
   letter-spacing: 0.005em;
+}
+
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
 }

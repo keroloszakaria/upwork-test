@@ -1,0 +1,141 @@
+doctype html
+html(lang="en")
+  head
+    -var pageName = "Home";
+    include ../base/head
+  body
+    // ========== HEADING ==========
+    include ../layouts/header
+    
+    main
+      section
+        .container
+          .products-list
+            h3 Mobile Collectios
+            .row.products_list.g-4
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+            .flex.justify-center.load-more
+              button.btn.btn-primary More products
+      section
+        .banner
+          .banner__content
+            h3 Mobile Accessories
+            img(src="./images/banner-image.png" height="230")
+      section
+        .container
+          .products-list
+            h3 Mobile Accessories
+            .row.products_list.g-4
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+            .flex.justify-center.load-more
+              button.btn.btn-primary More products
+      section
+        .banner
+          .banner__content
+            h3 Electronics 
+            img(src="https://s3-alpha-sig.figma.com/img/684f/9455/d1f93d489dafddee18c0bb41bc1ffc2a?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bpM~r8Ql05ex1wZrJ1Yce8vcrryW2Nzj-YbSY4Di2c0BIQV7ZcKbV8cC~KY7RdIMhuSAT9dzfi-HtMVsAwGeCMWJW76x8NmgFqG5sLKDV5wpNjamkis7~Rge5V3gYMYkH4z~CveetZy37R1DjTlnPVl4ll5aaiSeLl689gZvaePZm2kq9LOax68udKHG1GixM-jZzF8bcgs-9EE~6WqovdDfkt8vlXW7PouGJdvP8jMlFpLZbfQ-hIejVT1ZbMD-rFOXYYX3o0YJj5Y7njAEEoF~xs53PWgfnicgwGosb-GVL1T38sKx2myEvaKGl5P0T1RKGjgRbBFoMHVTN8J0~Q__" height="285")
+      section
+        .container
+          .products-list
+            h3 Electronics 
+            .row.products_list.g-4
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+              .col-lg-2
+                include ../components/productCard
+            .flex.justify-center.load-more
+              button.btn.btn-primary More products
+      section.badges
+        .container
+          .row
+            .col-lg-4.badges__card
+              .icon
+                img.invert(src="https://s3-alpha-sig.figma.com/img/3873/1503/e21e021680845159726ef9e0aadbe447?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DcZX6XoZQyDNc1uWrWWdFAgl5AHU~kcxr8zO73yWFKKX~NV-G2Gx6S4i8Ybafh2MtiIpdrOTa3znTEHc3tqVK3abqYiUXyqA~3afQkYvAUlr~i4WQSnpYqyJzgwuOpDd2E1OHxq68LP7M0quBYa8XW33piF9KOxjTjdWfGWLG4XY0-lxOtzQz0EuahKRrMCT40~HOL2mbz6GTNJ6vqybkDg-ZIY7xK0vb5w9K4bFN~uykdksdNateI9UAJ9bYM7~F85AJkazifI3CLrcgpjnqGUrwnxpctyVbtrKzf073kxKAyt8PI-nFXuc8eaPeErd9DaRqvFjtsaXbUmJ906Aiw__")
+              .content
+                h3 Graded by professionals
+                p Lorem Ipsum is simply dummy text of the printing and typesetting...
+            .col-lg-4.badges__card
+              .icon
+                img(src="./images/svg/money.svg")
+              .content
+                h3 The lowest price guaranteed
+                p Lorem Ipsum is simply dummy text of the printing and typesetting...
+            .col-lg-4.badges__card
+              .icon
+                img(src="./images/svg/badge.svg")
+              .content
+                h3 Offers
+                p Exclusive Weekly Deals for Online Purchases Only
+
+
+
+
+    include ../layouts/footer
+
+    include ../base/scripts
